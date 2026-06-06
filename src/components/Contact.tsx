@@ -94,8 +94,8 @@ const Contact = () => {
               </div>
               <div>
                 <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '0.2rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Email</p>
-                <a href="mailto:pragati@example.com" style={{ fontSize: '1.1rem', fontWeight: 500, color: 'var(--text-primary)' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--accent-color)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-primary)'}>
-                  pragati@example.com
+                <a href="mailto:pragatitiwari1102@gmail.com" style={{ fontSize: '1.1rem', fontWeight: 500, color: 'var(--text-primary)' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--accent-color)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-primary)'}>
+                  pragatitiwari1102@gmail.com
                 </a>
               </div>
             </div>
@@ -114,10 +114,10 @@ const Contact = () => {
           <div style={{ marginTop: '2rem', paddingTop: '2rem', borderTop: '1px solid var(--border-color)' }}>
             <p style={{ color: 'var(--text-primary)', marginBottom: '1rem', fontWeight: 600 }}>Connect socially</p>
             <div style={{ display: 'flex', gap: '1rem' }}>
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="btn-outline" style={{ padding: '0.85rem', borderRadius: '50%' }}>
+              <a href="https://github.com/pragati1102" target="_blank" rel="noreferrer" className="btn-outline" style={{ padding: '0.85rem', borderRadius: '50%' }}>
                 <FaGithub size={22} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="btn-outline" style={{ padding: '0.85rem', borderRadius: '50%' }}>
+              <a href="https://www.linkedin.com/in/pragati-tiwari-549364215/" target="_blank" rel="noreferrer" className="btn-outline" style={{ padding: '0.85rem', borderRadius: '50%' }}>
                 <FaLinkedin size={22} />
               </a>
             </div>
