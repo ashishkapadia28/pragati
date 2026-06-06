@@ -25,10 +25,10 @@ const Footer = () => {
             <a href="https://github.com/pragati1102" target="_blank" rel="noreferrer" className="footer-icon">
               <FaGithub size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="footer-icon">
+            <a href="https://www.linkedin.com/in/pragati-tiwari-549364215/" target="_blank" rel="noreferrer" className="footer-icon">
               <FaLinkedin size={20} />
             </a>
-            <a href="mailto:pragati@example.com" className="footer-icon">
+            <a href="mailto:pragatitiwari1102@gmail.com" className="footer-icon">
               <Mail size={20} />
             </a>
           </div>
@@ -50,7 +50,7 @@ const Footer = () => {
           <h4 style={{ color: 'var(--text-primary)', marginBottom: '1.5rem', fontSize: '1.125rem' }}>Contact</h4>
           <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', color: 'var(--text-secondary)' }}>
             <li>India</li>
-            <li>pragati@example.com</li>
+            <li>pragatitiwari1102@gmail.com</li>
             <li style={{ color: 'var(--accent-color)', marginTop: '0.5rem' }}>Available for new opportunities.</li>
           </ul>
         </div>

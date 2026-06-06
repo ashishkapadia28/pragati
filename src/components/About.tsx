@@ -47,10 +47,10 @@ const About = () => {
               <p style={{ color: 'var(--accent-color)', fontWeight: 600, fontSize: '1.125rem', marginBottom: '1rem' }}>Python Developer & Data Analyst</p>
               
               <div style={{ display: 'flex', gap: '0.75rem' }}>
-                <a href="https://github.com" target="_blank" rel="noreferrer" className="btn-outline" style={{ padding: '0.5rem', borderRadius: '50%' }}>
+                <a href="https://github.com/pragati1102" target="_blank" rel="noreferrer" className="btn-outline" style={{ padding: '0.5rem', borderRadius: '50%' }}>
                   <FaGithub size={18} />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="btn-outline" style={{ padding: '0.5rem', borderRadius: '50%' }}>
+                <a href="https://www.linkedin.com/in/pragati-tiwari-549364215/" target="_blank" rel="noreferrer" className="btn-outline" style={{ padding: '0.5rem', borderRadius: '50%' }}>
                   <FaLinkedin size={18} />
                 </a>
               </div>
