@@ -39,9 +39,11 @@ const Hero = () => {
     >
       {/* Interactive Background Glows */}
       <motion.div 
+        className="desktop-only"
         style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: backgroundGradient, pointerEvents: 'none', zIndex: 0, filter: 'blur(40px)' }} 
       />
       <motion.div 
+        className="desktop-only"
         style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: backgroundGradientAlt, pointerEvents: 'none', zIndex: 0, filter: 'blur(40px)' }} 
       />
 

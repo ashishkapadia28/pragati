@@ -39,11 +39,12 @@ const ResumePreview = () => {
 
         {/* PDF Content */}
         <div style={{ height: '80vh', minHeight: '600px', width: '100%', background: '#fff' }}>
-          <object 
-            data="/Pragati_Tiwari_Resume.pdf" 
-            type="application/pdf" 
+          <iframe 
+            src="/Pragati_Tiwari_Resume.pdf#toolbar=0" 
+            title="Resume Preview"
             width="100%" 
             height="100%"
+            style={{ border: 'none' }}
           >
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', background: 'var(--bg-color)', color: 'var(--text-primary)' }}>
               <p style={{ marginBottom: '1.5rem', fontSize: '1.125rem' }}>Your browser does not support PDFs.</p>
@@ -51,7 +52,7 @@ const ResumePreview = () => {
                 Download Resume PDF
               </a>
             </div>
-          </object>
+          </iframe>
         </div>
       </motion.div>
     </section>
