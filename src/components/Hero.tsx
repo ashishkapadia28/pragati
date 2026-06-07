@@ -20,8 +20,8 @@ const Hero = () => {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, [mouseX, mouseY]);
 
-  const backgroundGradient = useMotionTemplate`radial-gradient(600px circle at ${springX}px ${springY}px, rgba(0, 240, 255, 0.12), transparent 80%)`;
-  const backgroundGradientAlt = useMotionTemplate`radial-gradient(500px circle at ${springX}px ${springY}px, rgba(112, 0, 255, 0.1), transparent 80%)`;
+  const backgroundGradient = useMotionTemplate`radial-gradient(600px circle at ${springX}px ${springY}px, rgba(0, 240, 255, 0.15), rgba(0, 240, 255, 0) 80%)`;
+  const backgroundGradientAlt = useMotionTemplate`radial-gradient(500px circle at calc(${springX}px + 100px) calc(${springY}px + 100px), rgba(112, 0, 255, 0.15), rgba(112, 0, 255, 0) 80%)`;
 
   return (
     <section 
@@ -33,17 +33,16 @@ const Hero = () => {
         justifyContent: 'center',
         textAlign: 'center',
         paddingTop: '100px', // account for navbar
-        position: 'relative',
-        overflow: 'hidden'
+        position: 'relative'
       }}
       className="container"
     >
       {/* Interactive Background Glows */}
       <motion.div 
-        style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: backgroundGradient, pointerEvents: 'none', zIndex: 0 }} 
+        style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: backgroundGradient, pointerEvents: 'none', zIndex: 0, filter: 'blur(40px)' }} 
       />
       <motion.div 
-        style={{ position: 'fixed', top: '100px', left: '100px', right: 0, bottom: 0, background: backgroundGradientAlt, pointerEvents: 'none', zIndex: 0 }} 
+        style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: backgroundGradientAlt, pointerEvents: 'none', zIndex: 0, filter: 'blur(40px)' }} 
       />
 
       {/* Static fallback orbs for non-moving parts */}
