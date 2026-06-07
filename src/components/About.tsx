@@ -14,14 +14,14 @@ const About = () => {
         About Me
       </motion.h2>
 
-      <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+      <div className="grid about-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '4rem', alignItems: 'center' }}>
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '2rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
+          <div className="about-profile" style={{ display: 'flex', alignItems: 'center', gap: '2rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
             <div style={{
               flexShrink: 0,
               width: '140px',
@@ -46,7 +46,7 @@ const About = () => {
               <h3 style={{ fontSize: '1.75rem', marginBottom: '0.25rem', color: 'var(--text-primary)' }}>Pragati Tiwari</h3>
               <p style={{ color: 'var(--accent-color)', fontWeight: 600, fontSize: '1.125rem', marginBottom: '1rem' }}>Python Developer & Data Analyst</p>
               
-              <div style={{ display: 'flex', gap: '0.75rem' }}>
+              <div className="social-links" style={{ display: 'flex', gap: '0.75rem' }}>
                 <a href="https://github.com/pragati1102" target="_blank" rel="noreferrer" className="btn-outline" style={{ padding: '0.5rem', borderRadius: '50%' }}>
                   <FaGithub size={18} />
                 </a>
@@ -57,10 +57,10 @@ const About = () => {
             </div>
           </div>
 
-          <p style={{ fontSize: '1.125rem', color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
+          <p className="about-text" style={{ fontSize: '1.125rem', color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
             My journey in tech started with a fascination for numbers and patterns. Today, I use Python to turn raw data into actionable insights and scalable applications.
           </p>
-          <p style={{ fontSize: '1.125rem', color: 'var(--text-secondary)' }}>
+          <p className="about-text" style={{ fontSize: '1.125rem', color: 'var(--text-secondary)' }}>
             Whether it's building an ETL pipeline, training a predictive model, or developing a fast API backend, I focus on writing clean, efficient, and maintainable code.
           </p>
         </motion.div>
@@ -79,7 +79,7 @@ const About = () => {
           ].map((item, index) => (
             <motion.div 
               key={index}
-              className="glass-panel flex"
+              className="glass-panel flex about-card"
               style={{ padding: '1.5rem', gap: '1.5rem', alignItems: 'center' }}
               whileHover={{ x: 10, backgroundColor: 'var(--surface-hover)' }}
             >

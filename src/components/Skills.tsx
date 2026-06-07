@@ -73,7 +73,7 @@ const Skills = () => {
       </motion.h2>
 
       <motion.div 
-        className="glass-panel" 
+        className="glass-panel skills-panel" 
         style={{ padding: '1rem 3rem', borderRadius: '24px', marginTop: '3rem' }}
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -96,17 +96,18 @@ const Skills = () => {
           >
             {/* Category Name */}
             <div className="skill-category" style={{ flex: '0 0 250px' }}>
-              <h3 style={{ fontSize: '1.25rem', color: 'var(--text-primary)', fontWeight: 700, letterSpacing: '0.5px' }}>
+              <h3 className="skill-category-text" style={{ fontSize: '1.25rem', color: 'var(--text-primary)', fontWeight: 700, letterSpacing: '0.5px' }}>
                 {row.category}
               </h3>
             </div>
 
             {/* Icon Pills Marquee */}
-            <div className="marquee-container" style={{ flex: 1 }}>
+            <div className="marquee-container" style={{ flex: 1, width: '100%' }}>
               <div className={`marquee-content ${index % 2 === 0 ? 'marquee-left' : 'marquee-right'}`}>
                 {[...row.items, ...row.items, ...row.items, ...row.items].map((item, i) => (
                   <div 
                     key={i}
+                    className="skill-pill"
                     style={{
                       display: 'flex',
                       alignItems: 'center',
@@ -128,8 +129,8 @@ const Skills = () => {
                       e.currentTarget.style.boxShadow = 'none';
                     }}
                   >
-                    <item.icon size={20} color={item.color} />
-                    <span style={{ fontSize: '0.95rem', fontWeight: 500, color: 'var(--text-secondary)' }}>
+                    <item.icon className="skill-icon" size={20} color={item.color} />
+                    <span className="skill-text" style={{ fontSize: '0.95rem', fontWeight: 500, color: 'var(--text-secondary)' }}>
                       {item.name}
                     </span>
                   </div>

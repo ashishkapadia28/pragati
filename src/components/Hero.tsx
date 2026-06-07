@@ -61,19 +61,20 @@ const Hero = () => {
             padding: '0.5rem 1rem', 
             background: 'rgba(255,255,255,0.05)', 
             border: '1px solid rgba(255,255,255,0.1)', 
-            borderRadius: '99px',
-            marginBottom: '2rem'
+            borderRadius: '9999px',
+            marginBottom: '2rem',
+            maxWidth: '100%'
           }}
         >
-          <span style={{ display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--accent-color)', boxShadow: '0 0 10px var(--accent-color)' }}></span>
-          <span className="mono" style={{ fontSize: '0.875rem', color: 'var(--text-secondary)' }}>Code is read much more often than it is written</span>
+          <span style={{ display: 'inline-block', flexShrink: 0, width: '8px', height: '8px', borderRadius: '50%', background: 'var(--accent-color)', boxShadow: '0 0 10px var(--accent-color)' }}></span>
+          <span className="mono" style={{ fontSize: 'clamp(0.65rem, 3vw, 0.875rem)', color: 'var(--text-secondary)', textAlign: 'left', lineHeight: 1.4 }}>Code is read much more often than it is written</span>
         </motion.div>
         
         <motion.h1 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          style={{ fontSize: 'clamp(3.5rem, 8vw, 6rem)', marginBottom: '1.5rem', letterSpacing: '-0.03em', lineHeight: 1.05 }}
+          style={{ fontSize: 'clamp(2.5rem, 10vw, 6rem)', marginBottom: '1.5rem', letterSpacing: '-0.03em', lineHeight: 1.05 }}
         >
           Hi, I'm <span className="text-gradient">Pragati Tiwari</span>
         </motion.h1>
@@ -82,7 +83,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: 'var(--text-primary)', marginBottom: '2.5rem', fontWeight: 500 }}
+          style={{ fontSize: 'clamp(1.25rem, 5vw, 3rem)', color: 'var(--text-primary)', marginBottom: '2.5rem', fontWeight: 500 }}
         >
           Python Developer & Data Analyst.
         </motion.h2>
@@ -92,7 +93,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           className="hero-p"
-          style={{ fontSize: '1.25rem', color: 'rgba(255, 255, 255, 0.85)', marginBottom: '3.5rem', maxWidth: '700px', margin: '0 auto 3.5rem' }}
+          style={{ fontSize: 'clamp(1rem, 4vw, 1.25rem)', color: 'rgba(255, 255, 255, 0.85)', marginBottom: '3.5rem', maxWidth: '700px', margin: '0 auto 3.5rem' }}
         >
           I specialize in extracting powerful insights from complex datasets and building robust, scalable backend systems.
         </motion.p>
@@ -101,6 +102,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+          className="hero-buttons-container"
           style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}
         >
           <a href="/Pragati_Tiwari_Resume.pdf" download className="btn-primary">

@@ -97,7 +97,8 @@ button {
 }
 
 .section {
-  padding: 8rem 0;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   position: relative;
 }
 
@@ -210,7 +211,8 @@ button {
     padding: 0 1.25rem;
   }
   .section {
-    padding: 4rem 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   .section-title {
     font-size: 2.25rem;
@@ -223,9 +225,18 @@ button {
   .desktop-nav {
     display: none !important;
   }
+  .desktop-btn {
+    display: none !important;
+  }
+  .mobile-menu-btn {
+    display: flex !important;
+  }
   .nav-container {
     gap: 1rem !important;
     padding: 0.5rem 1rem !important;
+    justify-content: space-between;
+    width: 100%;
+    max-width: calc(100vw - 2.5rem);
   }
   .skill-row {
     flex-direction: column !important;
@@ -242,6 +253,93 @@ button {
   .contact-form-glass {
     padding: 1.5rem !important;
   }
+  .hero-buttons-container {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    width: 100%;
+  }
+  .hero-buttons-container > a {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Contact Section Mobile */
+  .contact-wrapper {
+    gap: 2rem !important;
+  }
+  
+  /* About Section Mobile */
+  .about-grid {
+    gap: 3rem !important;
+  }
+  .about-profile {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 1.5rem !important;
+  }
+  .social-links {
+    justify-content: center;
+  }
+  .about-text {
+    text-align: center;
+  }
+  .about-card {
+    padding: 1.25rem !important;
+    gap: 1rem !important;
+    flex-direction: column !important;
+    text-align: center;
+  }
+  
+  /* Projects Section Mobile */
+  .projects-grid {
+    gap: 1.5rem !important;
+    margin-top: 2rem !important;
+  }
+  
+  /* Skills Section Mobile */
+  .skills-panel {
+    padding: 1.5rem !important;
+  }
+  .skill-row {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: center !important;
+    padding: 1.25rem 0 !important;
+  }
+  .skill-category {
+    flex: unset !important;
+    width: 100% !important;
+    text-align: center;
+  }
+  .skill-category-text {
+    font-size: 1.15rem !important;
+  }
+  .marquee-container {
+    width: 100% !important;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+  .skill-pill {
+    padding: 0.5rem 1rem !important;
+  }
+  .skill-text {
+    font-size: 0.85rem !important;
+  }
+  .skill-icon {
+    width: 16px !important;
+    height: 16px !important;
+  }
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0.25rem;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Marquee Animations */

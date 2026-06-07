@@ -69,20 +69,21 @@ const Contact = () => {
         Get In Touch
       </motion.h2>
 
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', marginTop: '4rem' }}>
+      <div className="contact-wrapper" style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', marginTop: '4rem' }}>
         {/* Left Side: Contact Info */}
         <motion.div 
-          style={{ flex: '1 1 400px', display: 'flex', flexDirection: 'column', gap: '2rem' }}
+          className="contact-info"
+          style={{ flex: '1 1 250px', display: 'flex', flexDirection: 'column', gap: '2rem' }}
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
           <div>
-            <h3 style={{ fontSize: '3rem', marginBottom: '1rem', color: 'var(--text-primary)', lineHeight: 1.1 }}>
+            <h3 style={{ fontSize: 'clamp(2rem, 8vw, 3rem)', marginBottom: '1rem', color: 'var(--text-primary)', lineHeight: 1.1 }}>
               Let's build something <br/><span className="text-gradient">data-driven.</span>
             </h3>
-            <p style={{ fontSize: '1.125rem', color: 'var(--text-secondary)', marginTop: '1.5rem', lineHeight: 1.7 }}>
+            <p style={{ fontSize: 'clamp(1rem, 4vw, 1.125rem)', color: 'var(--text-secondary)', marginTop: '1.5rem', lineHeight: 1.7 }}>
               I'm always open to discussing data projects, analytics dashboards, or opportunities to collaborate on innovative ideas. Let's connect!
             </p>
           </div>
@@ -94,7 +95,7 @@ const Contact = () => {
               </div>
               <div>
                 <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '0.2rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Email</p>
-                <a href="mailto:pragatitiwari1102@gmail.com" style={{ fontSize: '1.1rem', fontWeight: 500, color: 'var(--text-primary)' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--accent-color)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-primary)'}>
+                <a href="mailto:pragatitiwari1102@gmail.com" style={{ fontSize: 'clamp(0.85rem, 4vw, 1.1rem)', fontWeight: 500, color: 'var(--text-primary)', wordBreak: 'break-all' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--accent-color)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-primary)'}>
                   pragatitiwari1102@gmail.com
                 </a>
               </div>
@@ -127,7 +128,7 @@ const Contact = () => {
         {/* Right Side: Contact Form */}
         <motion.div 
           className="contact-form-glass glass-panel"
-          style={{ flex: '1 1 500px', padding: '3.5rem', borderRadius: '32px', position: 'relative', overflow: 'hidden' }}
+          style={{ flex: '1 1 250px', padding: '3.5rem', borderRadius: '32px', position: 'relative', overflow: 'hidden' }}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
